@@ -16,7 +16,7 @@ export class RecapitulatifService {
     return this._http.get<Array<Recapitulatif>>(this.url);
   }
   public save(recapitulatif: Recapitulatif):Observable<Recapitulatif>{
-    return this._http.post<Recapitulatif>(this.url , recapitulatif);
+    return this._http.post<Recapitulatif>(this.url , this.recapitulatif);
   }
   public  deleteByReference(code: string): Observable<number>{
     return this._http.delete<number>(this.url+'code/'+code);
