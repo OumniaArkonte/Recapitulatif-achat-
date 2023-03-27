@@ -9,7 +9,7 @@ import {Observable} from "rxjs";
 export class RecapitulatifService {
   private _recapitulatif!: Recapitulatif;
   private _recapitulatifs!: Array<Recapitulatif>;
-  private _url = "http://localhost:8036/api/v1/recapitulatif/"
+  private _url = "http://localhost:8033/GestionCommertiale/RecapitulatifAchat/"
 
   constructor(private _http:HttpClient) { }
   public findAll():Observable<Array<Recapitulatif>>{

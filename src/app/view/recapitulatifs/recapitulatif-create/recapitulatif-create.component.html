@@ -1,1 +1,74 @@
-<p>recapitulatif-create works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recapitulatif d'achat</title>
+  <link rel="stylesheet" type="text/css" href="./recapitulatif-create.component.css">
+</head>
+<body>
+<h1>Recapitulatif d'achat</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Produit</th>
+    <th>Prix</th>
+    <th>Quantite</th>
+    <th>Total</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <img src="/recapitulatif-achat/src/assets/images/image1.jpg" alt="Produit 1">
+      <br>
+      Produit 1
+    </td>
+    <td>$10.00</td>
+    <td>2</td>
+    <td>$20.00</td>
+    <td>
+      <button class="btn remove-btn">-</button>
+      <button class="btn add-btn">+</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="/recapitulatif-achat/src/assets/images/image2.jpg" alt="Produit 2">
+      <br>
+      Produit 2
+    </td>
+    <td>$20.00</td>
+    <td>1</td>
+    <td>$20.00</td>
+    <td>
+      <button class="btn remove-btn">-</button>
+      <button class="btn add-btn">+</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="/recapitulatif-achat/src/assets/images/image3.jpg" alt="Produit 3">
+      <br>
+      Produit 3
+    </td>
+    <td>$15.00</td>
+    <td>3</td>
+    <td>$45.00</td>
+    <td>
+      <button class="btn remove-btn">-</button>
+      <button class="btn add-btn">+</button>
+    </td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <td colspan="3"><strong>Montant Total</strong></td>
+    <td>$85.00</td>
+    <td> <button class="btn-validate">Valider</button>
+    </td>
+  </tr>
+  </tfoot>
+</table>
+<script src="script.js"></script>
+</body>
+</html>
